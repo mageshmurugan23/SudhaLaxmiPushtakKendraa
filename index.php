@@ -1004,7 +1004,6 @@ onclick="closePopup()">
 Select Class
 
 </h2>
-
 <div class="popup-buttons">
 
 <button onclick="showBooks('Nursery')">
@@ -1019,28 +1018,27 @@ LKG
 UKG
 </button>
 
-<button onclick="showBooks('1')">
+<button onclick="showBooks('Class 1')">
 Class 1
 </button>
 
-<button onclick="showBooks('2')">
+<button onclick="showBooks('Class 2')">
 Class 2
 </button>
 
-<button onclick="showBooks('3')">
+<button onclick="showBooks('Class 3')">
 Class 3
 </button>
 
-<button onclick="showBooks('4')">
+<button onclick="showBooks('Class 4')">
 Class 4
 </button>
 
-<button onclick="showBooks('5')">
+<button onclick="showBooks('Class 5')">
 Class 5
 </button>
 
 </div>
-
 </div>
 
 </div>
@@ -1237,7 +1235,7 @@ document
 function showBooks(className){
 
 window.location.href =
-"books.php?class=" + className;
+"books.php?class=" + encodeURIComponent(className);
 
 }
 
